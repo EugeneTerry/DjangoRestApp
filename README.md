@@ -24,7 +24,7 @@ Instructions for how to start a Django REST API
    djangorestapi
    ```
 
-1. ## .gitignore for Djanjo Application
+2. ## .gitignore for Djanjo Application
 
    If you are pushing your code to github, you will need to ignore certain foles before pushing up. An example .gitignore file is provided in this repo
 
@@ -35,7 +35,7 @@ Instructions for how to start a Django REST API
        .gitignore
    ```
 
-1. ## Create Virtual Environment
+3. ## Create Virtual Environment
 
    After creating this environment dot forget to add it to the .gitignore
 
@@ -54,7 +54,7 @@ Instructions for how to start a Django REST API
    └───env
    ```
 
-1. ## Install Django and Django REST Framework into the Virtual Environment
+4. ## Install Django and Django REST Framework into the Virtual Environment
 
    ### Terminal Commands
 
@@ -63,7 +63,7 @@ Instructions for how to start a Django REST API
    $ pip install djangorestframework
    ```
 
-1. ## Create project
+5. ## Create project
 
    - Create project in a directory named after the project name
 
@@ -93,13 +93,13 @@ Instructions for how to start a Django REST API
              └───__pycache__/
      ```
 
-Next, install these third-party packages for use in your project.
+6. ## Install these third-party packages for use in your project.
 
 ```sh
 pipenv install django autopep8 pylint djangorestframework django-cors-headers pylint-django
 ```
 
-   - Create project in current directory
+7. ##  Create project in current directory
 
      ### Terminal Commands
 
@@ -124,14 +124,14 @@ pipenv install django autopep8 pylint djangorestframework django-cors-headers py
          └───__pycache__/
      ```
 
-1. ## Start Server
+8. ## Start Server
 
    ### Terminal Commands
 
    ```shell
    $ python manage.py runserver
    ```
-## Controlling Lint Errors
+9. ## Controlling Lint Errors
 
 ### Add Pylint file
 
@@ -178,7 +178,7 @@ There should now be a .vscode folder in your directory. Open the `settings.json`
 
 
 
-1. ## Create application
+10. ## Create application
 
    ### Terminal Commands
 
@@ -216,7 +216,7 @@ There should now be a .vscode folder in your directory. Open the `settings.json`
                     __init__.py
    ```
 
-## Add Content To .gitignore File
+11. ## Add Content To .gitignore File
 
 Create a `.gitignore` file and generate the content for it by running this command
 
@@ -224,13 +224,13 @@ Create a `.gitignore` file and generate the content for it by running this comma
 curl -L -s 'https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore' > .gitignore
 ```
 
-## Update Settings
+12. ## Update Settings
 
-Below, there are four sections of your project's `settings.py` module. Replace your existing sections with the code below.
+   Below, there are four sections of your project's `settings.py` module. Replace your existing sections with the code below.
 
-These settings changes will be needed for any REST API application that you make. The only thing that will differ between applications is the name of the application itself.
+   These settings changes will be needed for any REST API application that you make. The only thing that will differ between applications    is the name of the application itself.
 
-Below, you can see `appname` in the list of installed apps. Whatever project you create in the future, your application names in that project will go there instead.
+   Below, you can see `appname` in the list of installed apps. Whatever project you create in the future, your application names in that project will go there instead.
 
 > `/settings.py`
 
@@ -288,7 +288,7 @@ MIDDLEWARE = [
    $ python manage.py migrate
    ```
 
-1. ## Create a superuser
+13. ## Create a superuser
 
    Follow the directions that come up after running the following command
 
